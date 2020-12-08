@@ -68,3 +68,5 @@ const generate3CourseMeal = (starters, mains, desserts) => {
     dessert = generateDessert(desserts);
     return `Here is our 3 course meal. For starter we have ${starter}, for main we have ${main} and ${dessert} for dessert.`
 }
+
+console.log(generate3CourseMeal(starters,mains,desserts));
