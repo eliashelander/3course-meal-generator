@@ -54,5 +54,9 @@ const generateMain = listMains => {
 }
 
 // Function to generate dessert
+const generateDessert = listDesserts => {
+    const randomNumber = Math.floor(Math.random() * listMains.length);
+    return listMains[randomNumber];
+}
 
 // Function to return complete 3 course meal
