@@ -41,22 +41,30 @@ let desserts = [
     'Reeses Fudge '
 ]
 
+// Function to generate random Index of list
+const randomIndexOfList = list => {
+    return Math.floor(Math.random() * list.length);
+}
+
 // Function to generate starter
 const generateStarter = listStarters => {
-    const randomNumber = Math.floor(Math.random() * listStarters.length);
-    return listStarters[randomNumber];
+    return listStarters[randomIndexOfList(listStarters)];
 }
 
 // Function to generate main
 const generateMain = listMains => {
-    const randomNumber = Math.floor(Math.random() * listMains.length);
-    return listMains[randomNumber];
+    return listMains[randomIndexOfList(listMains)];
 }
 
 // Function to generate dessert
 const generateDessert = listDesserts => {
-    const randomNumber = Math.floor(Math.random() * listMains.length);
-    return listMains[randomNumber];
+    return listDesserts[randomIndexOfList(listDesserts)];
 }
 
 // Function to return complete 3 course meal
+const generate3CourseMeal = (starters, mains, desserts) => {
+    starter = generateStarter(starters);
+    main = generateMain(mains);
+    dessert = generateDessert(desserts);
+    return `Here is our 3 course meal. For starter we have ${starter}, for main we have ${main} and ${dessert} for dessert.`
+}
