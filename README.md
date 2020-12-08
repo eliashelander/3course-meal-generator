@@ -14,11 +14,13 @@ Run ```node course_generator.js``` in your terminal. This will return a random 3
 The only requirment is that you have a terminal to run with node. So make sure to install node if it's not already installed on your computer.
 
 Check if you have node:
-```node
+```
+node
 ```
 
 If you don't see a version of node beeing returned, install node. If you have brew you can run:
-```brew install node
+```
+brew install node
 ```
 Otherwise you can first [install brew](https://medium.com/@hayasnc/how-to-install-nodejs-and-npm-on-mac-using-homebrew-b33780287d8f).
 
