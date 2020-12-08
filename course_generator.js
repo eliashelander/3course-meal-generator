@@ -43,11 +43,15 @@ let desserts = [
 
 // Function to generate starter
 const generateStarter = listStarters => {
-    const randomNumber = Math.floor(Math.random() * listStarters.length)
-    return listStarters[randomNumber]
+    const randomNumber = Math.floor(Math.random() * listStarters.length);
+    return listStarters[randomNumber];
 }
 
 // Function to generate main
+const generateMain = listMains => {
+    const randomNumber = Math.floor(Math.random() * listMains.length);
+    return listMains[randomNumber];
+}
 
 // Function to generate dessert
 
