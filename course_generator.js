@@ -42,6 +42,10 @@ let desserts = [
 ]
 
 // Function to generate starter
+let generateStarter1 = listStarters => {
+    const randomNumber = Math.floor(Math.random() * listStarters.length)
+    return listStarters[randomNumber]
+}
 
 // Function to generate main
 
